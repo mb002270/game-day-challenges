@@ -24,7 +24,7 @@ There are probably 100's of ways of doing this.  This is just one way.
 	}
 	```
 1. sudo service nginx start
-1. curl http://<dns name of your host>/id
+1. curl http://[DNS NAME OF HOST]/id
 1. sudo chkconfig nginx on
 1. reboot your server to verify that it works after a reboot.  re-execute the curl statement to verify.
 1. From the Control Panel create an image from the server.  (This may take a few minutes to complete - make sure you have the option to reboot the server - that ensures a good snapshot.  This is a check-box that should NOT be selected (checking is NO REBOOT)

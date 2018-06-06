@@ -26,11 +26,15 @@ There are probably 100's of ways of doing this.  This is just one way.
 1. sudo service nginx start
 1. curl http://[DNS NAME OF HOST]/id
 1. sudo chkconfig nginx on
-1. reboot your server to verify that it works after a reboot.  re-execute the curl statement to verify.
+1. Reboot your server to verify that it works after a reboot.  re-execute the curl statement to verify.
 1. From the Control Panel create an image from the server.  (This may take a few minutes to complete - make sure you have the option to reboot the server - that ensures a good snapshot.  This is a check-box that should NOT be selected (checking is NO REBOOT)
 1. Create an ALB
 1. Create a Launch Configuration
-1. Create Autoscaling group. Configure to recieve traffic from the ALB.  set min size to 1, max to 3, and scale if an instance gets more than 3 requests. Use EC2 status as the health check. Tag new instances with a name you will recognize.
-1. 
+1. Create Autoscaling group. 
+	1. Configure to recieve traffic from the ALB.
+	1. Set min size to 1, max to 3
+	1. Scale if an instance gets more than 3 requests. 
+	1. Use EC2 status as the health check. 
+	1. Tag new instances with a name you will recognize.
 
 

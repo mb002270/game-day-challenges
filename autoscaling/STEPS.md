@@ -4,6 +4,7 @@ There are probably 100's of ways of doing this.  This is just one way.
 
 ## High Level Steps
 1. Create an AMI of the server you want to boot.
+1. Create an ALB
 1. Create a launch configuration launching that AMI
 1. Create an autoscaling group based on that launch config
 

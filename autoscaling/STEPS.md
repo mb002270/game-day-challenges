@@ -12,8 +12,7 @@ There are probably 100's of ways of doing this.  This is just one way.
 1. Boot up a linux server.  I am using an amazon linux server.
 1. SSH into that server.
 1. sudo yum install nginx
-1. vi /etc/nginx/conf.d/virtual.conf  and put the following data in the file
-```
+1. sudo vi /etc/nginx/conf.d/virtual.conf  and put the following data in the file ```
 server {
     listen       80;
     server_name  *.amazonaws.com *.ec2.internal localhost;
